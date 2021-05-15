@@ -1,0 +1,20 @@
+web:
+  resource-path: E:/data/dreamer-cms/
+
+spring: 
+  datasource: 
+    name: dev
+    url: jdbc:mysql://127.0.0.1:3308/dreamer-cms?serverTimezone=GMT&useSSL=false&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 10000
+    timeout: 2000
+    password: redis2&yhnM@2
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 50
+        max-wait: -1
